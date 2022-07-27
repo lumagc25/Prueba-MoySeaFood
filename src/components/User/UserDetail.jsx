@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./User.css";
 
 const UserDetail = () => {
@@ -84,7 +84,10 @@ const UserDetail = () => {
           <input className="form-control" type="email" name="email" id="email" value={userEmail} onChange={(ev) => setUserEmail(ev.target.value)} /> <br />
           <label htmlFor="phone">Phone:</label><br />
           <input className="form-control" type="text" name="phone" id="phone" value={userPhone} onChange={(ev) => setUserPhone(ev.target.value)}/> <br />
+          
           <button className="btn btn-primary" type="submit">Update</button>
+          
+          
           </form>
         </div>
     </section>
